@@ -1,0 +1,29 @@
+.section{
+  margin: 50px 0px;
+}
+
+.button{
+  height: 40px;
+  padding: 10px;
+  margin: 5px 0px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 1s;
+  font-size: 15px;
+  width: fit-content;
+  align-self: center;
+}
+
+.button:hover{
+  background-color: rgb(179, 179, 133);
+  transform: scale(110%);
+}
+
+.textarea{
+  width: 500px;
+  height: 300px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
