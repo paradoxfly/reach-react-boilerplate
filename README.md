@@ -15,15 +15,49 @@
 
 ### USING [BOILERPLATE](https://github.com/paradoxfly/reach-react-boilerplate)
 
-<br/>
-
+#### File Directory
+```
+.
+|_ public (contains media files)
+|_ src (main app dir)
+|   |_ reach
+|   |   |_ .reach
+|   |   |_ build
+|           |_ index.main.mjs
+|   |   |_ index.rsh
+|   |   |_ reach
+|   |_ screens
+|       |_ ConnectAccount.jsx
+|       |_ index.css
+|       |_ index.js
+|       |_ PasteContractInfo.jsx
+|       |_ SelectRole.jsx
+|       |_ TestView.jsx
+|       |_ WairForAttacher.jsx
+|   |_ utils
+|       |_ Constant.js
+|       |_ index.css
+|       |_ index.js
+|       |_ loader.jsx
+|   |_ App.css
+|   |_ App.test.js
+|   |_ index.css
+|   |_ index.js
+|   |_ logo.svg
+|   |_ reportWebVitals.js
+|   |_ setupTests.js
+|_ .gitignore
+|_ package.json
+|_ reach
+|_ README.md
+```
 #### Requirements:
-<br/>
-Reach - https://docs.reach.sh/tut/rps/#tut-1 
-<br/>
-git - https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
-<br/>
-yarn - https://classic.yarnpkg.com/lang/en/docs/install/#debian-stable
+
+:computer: Reach - https://docs.reach.sh/tut/rps/#tut-1
+
+:computer: git - https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+
+:computer: yarn - https://classic.yarnpkg.com/lang/en/docs/install/#debian-stable
 
 #### Clone the repository
 
@@ -35,6 +69,7 @@ yarn - https://classic.yarnpkg.com/lang/en/docs/install/#debian-stable
 yarn install
 
 # From the project root path
+
 cd src/reach
 
 # To compile to the latest version of REACH
@@ -57,4 +92,6 @@ This opens a new browser with `localhost:3000` running.
 
 #### Deployer and Attacher view
 
-Open `localhost:3000` on separate browsers to test using AlgoConnect or Mnemonic keys.
+Open `localhost:3000` on separate browsers to test using [MyAlgo](https://wallet.myalgo.com/) Testnet or it's Mnemonic keys.
+
+Implement your backend changes in `src/reach/index.rsh`
