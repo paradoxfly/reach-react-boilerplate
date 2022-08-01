@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# REACH + REACT BOILERPLATE :technologist:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### :question:	What is [Reach](https://docs.reach.sh/tut/overview/#overview)?
 
-## Available Scripts
 
-In the project directory, you can run:
+:bulb: DApps are made of multiple agents interacting with each other through some backend consensus network, like Ethereum or Algorand. 
 
-### `yarn start`
+:bulb: In [Reach](https://docs.reach.sh/tut/overview/#overview), a programmer only needs to specify the actions of participants---what they do individually and what they do in unison. The [Reach](https://docs.reach.sh/tut/overview/#overview) compiler automatically derives a contract for the consensus network via a connector that enforces these rules. [More on [Reach](https://docs.reach.sh/tut/overview/#overview)](https://docs.[Reach](https://docs.reach.sh/tut/overview/#overview).sh/tut/overview/#overview)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+[React](https://reactjs.org/docs/create-a-new-react-app.html) is [one of many](https://docs.reach.sh/frontend/#p_1) frameworks that can be implemented with [Reach](https://docs.reach.sh/tut/overview/#overview).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+:seedling: This boilerplate helps kickstart your development of a Reach dAPP using React frontend.
 
-### `yarn test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### USING [BOILERPLATE](https://github.com/paradoxfly/reach-react-boilerplate)
 
-### `yarn build`
+<br/>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Requirements:
+<br/>
+Reach - https://docs.reach.sh/tut/rps/#tut-1 
+<br/>
+git - https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+<br/>
+yarn - https://classic.yarnpkg.com/lang/en/docs/install/#debian-stable
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Clone the repository
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+`git clone https://github.com/paradoxfly/reach-react-boilerplate`
 
-### `yarn eject`
+#### Install the dependencies
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+yarn install
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# From the project root path
+cd src/reach
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# To compile to the latest version of REACH
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+./reach compile
+```
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### Test the Application
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+Run `yarn start` to get your development server start.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+This opens a new browser with `localhost:3000` running.
 
-### Analyzing the Bundle Size
+![startup](public/Startup%20Screen.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+#### Deployer and Attacher view
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Open `localhost:3000` on separate browsers to test using AlgoConnect or Mnemonic keys.

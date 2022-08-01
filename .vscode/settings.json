@@ -1,6 +1,6 @@
 {
     "files.associations": {
-        // "*.rsh": "javascript"
+        "*.rsh": "javascript"
     },
     "javascript.suggest.completeFunctionCalls": true
 }
