@@ -33,7 +33,7 @@
 |       |_ PasteContractInfo.jsx
 |       |_ SelectRole.jsx
 |       |_ TestView.jsx
-|       |_ WairForAttacher.jsx
+|       |_ WaitForAttacher.jsx
 |   |_ utils
 |       |_ Constant.js
 |       |_ index.css
@@ -48,7 +48,6 @@
 |   |_ setupTests.js
 |_ .gitignore
 |_ package.json
-|_ reach
 |_ README.md
 ```
 #### Requirements:
