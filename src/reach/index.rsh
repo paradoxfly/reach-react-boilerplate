@@ -14,17 +14,14 @@ export const main = Reach.App(() => {
 
   init();
 
-  Deployer.only(() => {
-    interact.test();
-  })
   Deployer.publish();
   commit();
 
-  Attacher.only(() => {
-    interact.test();
-  })
   Attacher.publish();
   commit();
+
+  Attacher.interact.test();
+  Deployer.interact.test();
 
   exit(); 
 })
