@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+# REACH + REACT BOILERPLATE :technologist:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### :question:	What is [Reach](https://docs.reach.sh/tut/overview/#overview)?
 
-## Available Scripts
 
-In the project directory, you can run:
+:bulb: DApps are made of multiple agents interacting with each other through some backend consensus network, like Ethereum or Algorand. 
 
-### `yarn start`
+:bulb: In [Reach](https://docs.reach.sh/tut/overview/#overview), a programmer only needs to specify the actions of participants---what they do individually and what they do in unison. The [Reach](https://docs.reach.sh/tut/overview/#overview) compiler automatically derives a contract for the consensus network via a connector that enforces these rules. [More on [Reach](https://docs.reach.sh/tut/overview/#overview)](https://docs.[Reach](https://docs.reach.sh/tut/overview/#overview).sh/tut/overview/#overview)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+[React](https://reactjs.org/docs/create-a-new-react-app.html) is [one of many](https://docs.reach.sh/frontend/#p_1) frameworks that can be implemented with [Reach](https://docs.reach.sh/tut/overview/#overview).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+:seedling: This boilerplate helps kickstart your development of a Reach dAPP using React frontend.
 
-### `yarn test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### USING [BOILERPLATE](https://github.com/paradoxfly/reach-react-boilerplate)
 
-### `yarn build`
+#### File Directory
+```
+.
+|_ public (contains media files)
+|_ src (main app dir)
+|   |_ reach
+|   |   |_ .reach
+|   |   |_ build
+|           |_ index.main.mjs
+|   |   |_ index.rsh
+|   |   |_ reach
+|   |_ screens
+|       |_ ConnectAccount.jsx
+|       |_ index.css
+|       |_ index.js
+|       |_ PasteContractInfo.jsx
+|       |_ SelectRole.jsx
+|       |_ TestView.jsx
+|       |_ WairForAttacher.jsx
+|   |_ utils
+|       |_ Constant.js
+|       |_ index.css
+|       |_ index.js
+|       |_ loader.jsx
+|   |_ App.css
+|   |_ App.test.js
+|   |_ index.css
+|   |_ index.js
+|   |_ logo.svg
+|   |_ reportWebVitals.js
+|   |_ setupTests.js
+|_ .gitignore
+|_ package.json
+|_ reach
+|_ README.md
+```
+#### Requirements:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+:computer: Reach - https://docs.reach.sh/tut/rps/#tut-1
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+:computer: git - https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+:computer: yarn - https://classic.yarnpkg.com/lang/en/docs/install/#debian-stable
 
-### `yarn eject`
+#### Clone the repository
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+`git clone https://github.com/paradoxfly/reach-react-boilerplate`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Install the dependencies
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+yarn install
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# From the project root path
 
-## Learn More
+cd src/reach
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# To compile to the latest version of REACH
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+./reach compile
+```
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+#### Test the Application
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Run `yarn start` to get your development server start.
 
-### Making a Progressive Web App
+This opens a new browser with `localhost:3000` running.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+![startup](public/Startup%20Screen.png)
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+#### Deployer and Attacher view
 
-### Deployment
+Open `localhost:3000` on separate browsers to test using [MyAlgo](https://wallet.myalgo.com/) Testnet or it's Mnemonic keys.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Implement your backend changes in `src/reach/index.rsh`
